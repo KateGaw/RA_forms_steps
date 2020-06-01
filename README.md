@@ -1,4 +1,4 @@
-
+[![Build status](https://ci.appveyor.com/api/projects/status/pho7vmrgrduirdp8?svg=true)](https://ci.appveyor.com/project/KateGaw/ra-forms-steps)
 
 https://kategaw.github.io/RA_forms_steps/
 
