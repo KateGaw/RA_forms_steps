@@ -1,4 +1,6 @@
 import React, { useState } from "react";
+import DatePicker from "react-datepicker";
+import "react-datepicker/dist/react-datepicker.css";
 
 const StepsForm = (props) => {
   const [form, setForm] = useState({
@@ -6,40 +8,46 @@ const StepsForm = (props) => {
     distance: "",
   });
 
+  const dateChange = (date) => {
+    setForm((prevForm) => ({
+      ...prevForm,
+      date,
+    }));
+  };
+
   const inputChange = (event) => {
     const name = event.target.name;
     const value = event.target.value;
 
-    setForm(prevForm => ({
+    setForm((prevForm) => ({
       ...prevForm,
-      [name]: value
+      [name]: value,
     }));
   };
 
   const submitHandle = (event) => {
-    if (form.date !== "" && form.distance !== "") {
-      event.preventDefault();
+    if (form.date !== null && form.distance !== "") {
       props.onSubmit({
         ...form,
-        distance: parseFloat(form.distance),
-        date: form.date,
+        distance: parseInt(form.distance),
       });
       setForm({
         date: "",
         distance: "",
       });
     }
+
+    event.preventDefault();
   };
 
   return (
     <form className="form" onSubmit={submitHandle}>
       <div className="div">
         <label htmlFor="date">Дата (ДД.ММ.ГГ)</label>
-        <input
-          id="date"
-          name="date"
-          value={form.date}
-          onChange={inputChange}
+        <DatePicker
+          dateFormat="dd.MM.yyyy"
+          selected={form.date}
+          onSelect={dateChange}
         />
       </div>
       <div className="div">

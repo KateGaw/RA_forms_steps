@@ -1,4 +1,5 @@
 import React from "react";
+import moment from 'moment';
 
 const StepsTable = (props) => {
   const sorting = [...props.items];
@@ -17,7 +18,7 @@ const StepsTable = (props) => {
         <tbody>
           {sorting.map((item) => (
             <tr key={item.id}>
-              <td>{item.date}</td>
+              <td>{moment(item.date).format('DD.MM.YYYY')}</td>
               <td>{item.distance}</td>
               <td>
                 <button

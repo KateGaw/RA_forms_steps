@@ -1,12 +1,9 @@
 import React, { useState } from "react";
 import { nanoid } from "nanoid";
 import moment from "moment";
-import "moment/locale/ru";
 
 import StepsForm from "./StepsForm";
 import StepsTable from "./StepsTable";
-
-moment.locale("ru");
 
 const Steps = () => {
   const [steps, setSteps] = useState([]);
