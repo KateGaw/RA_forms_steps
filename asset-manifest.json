@@ -1,0 +1,25 @@
+{
+  "files": {
+    "main.css": "/RA_forms_steps/static/css/main.c7f5a121.chunk.css",
+    "main.js": "/RA_forms_steps/static/js/main.76145c75.chunk.js",
+    "main.js.map": "/RA_forms_steps/static/js/main.76145c75.chunk.js.map",
+    "runtime-main.js": "/RA_forms_steps/static/js/runtime-main.bab88522.js",
+    "runtime-main.js.map": "/RA_forms_steps/static/js/runtime-main.bab88522.js.map",
+    "static/css/2.ecffae5e.chunk.css": "/RA_forms_steps/static/css/2.ecffae5e.chunk.css",
+    "static/js/2.424e6472.chunk.js": "/RA_forms_steps/static/js/2.424e6472.chunk.js",
+    "static/js/2.424e6472.chunk.js.map": "/RA_forms_steps/static/js/2.424e6472.chunk.js.map",
+    "index.html": "/RA_forms_steps/index.html",
+    "precache-manifest.bf505dc77b65086397e392ec2951650d.js": "/RA_forms_steps/precache-manifest.bf505dc77b65086397e392ec2951650d.js",
+    "service-worker.js": "/RA_forms_steps/service-worker.js",
+    "static/css/2.ecffae5e.chunk.css.map": "/RA_forms_steps/static/css/2.ecffae5e.chunk.css.map",
+    "static/css/main.c7f5a121.chunk.css.map": "/RA_forms_steps/static/css/main.c7f5a121.chunk.css.map",
+    "static/js/2.424e6472.chunk.js.LICENSE.txt": "/RA_forms_steps/static/js/2.424e6472.chunk.js.LICENSE.txt"
+  },
+  "entrypoints": [
+    "static/js/runtime-main.bab88522.js",
+    "static/css/2.ecffae5e.chunk.css",
+    "static/js/2.424e6472.chunk.js",
+    "static/css/main.c7f5a121.chunk.css",
+    "static/js/main.76145c75.chunk.js"
+  ]
+}
